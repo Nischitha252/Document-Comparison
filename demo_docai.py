@@ -887,8 +887,8 @@ def main():
     # Your provided AzureChatOpenAI setup (expects env vars or a configured openai object)
     # Ensure you have:
     #   os.environ["OPENAI_API_KEY"] = "..."
-    #   os.environ["AZURE_OPENAI_API_VERSION"] = "2024-02-15-preview"  (example)
-    #   os.environ["AZURE_OPENAI_API_BASE"] = "https://your-endpoint.openai.azure.com/"
+    #   os.environ["AZURE_OPENAI_API_VERSION"] = ""
+    #   os.environ["AZURE_OPENAI_API_BASE"] = ""
     #   LLM_MODEL = "gpt-4o"  (or your deployed name)
     openai.api_type = os.environ.get("AZURE_OPENAI_TYPE")
     openai.api_base = os.environ.get("AZURE_OPENAI_ENDPOINT")
@@ -934,4 +934,5 @@ def main():
 
 # Allow importing and direct execution
 if __name__ == "__main__":
+
     main()
