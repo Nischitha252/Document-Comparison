@@ -881,7 +881,7 @@ def find_candidate_pages(pdf_path: str, keywords: List[str]) -> List[int]:
 def main():
     load_dotenv()
     # === Configure here (no argparse) ===
-    PDF_PATH = r"C:\Users\INNIMK\OneDrive - ABB\Documents\ABB Projects\Cyber Security Bidding (CSB) Tool - DOC pack for ABB INdia\Roopashree_RFQ\DEP 32.01.20.12.pdf"   # <-- change me
+    PDF_PATH = r"#FILE PATH"   # <-- change me
     KEYWORDS = ["IEC 62443", "Firewall", "Backup", "Network Management", "System Hardening"]
 
     # Your provided AzureChatOpenAI setup (expects env vars or a configured openai object)
@@ -936,3 +936,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
